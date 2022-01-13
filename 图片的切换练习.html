@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+
+}
+
+   #outer{
+       width: 1032px; 
+       margin: 50px auto;
+       padding: 10px;
+       background-color: aquamarine;
+       text-align: center;
+   }
+
+
+
+
+
+    </style>
+<script>
+   
+     window.onload = function(){
+       //点击按钮切换图片
+       var prev = document.getElementById("prev");
+       var next = document.getElementById("next");
+//分别为两个绑定单击响应函数
+
+//获取img标签的src属性
+var img = document.getElementsByTagName("img")[0];
+//创建一个数组来保存图片的路径
+var imgArr = [
+    "图片切换练习/6_474_0620a932-f7eb-404b-887c-be555011fddb_e7c2611.jpg",//0
+    "图片切换练习/6_474_c437b4b5-1c41-4b69-ae7c-562c7c9209d2_19fcc25.jpg",//1
+    "图片切换练习/6_474_e42654fe-0d02-4d16-a67e-1beded206ca0_e432b3d.jpg",//2
+    "图片切换练习/6_474_fc7249c0-05e5-4c4b-ab82-6fda26e3a89c_9c31fe4.jpg"//3
+];
+var index = 0;
+//设置提示文字
+
+//获取ID为info的p元素
+ var info = document.getElementById("info");
+ info.innerHTML ="一共有"+imgArr.length+"张，现在是第"+(index+1)+"张";
+prev.onclick = function(){
+    //alert("上一张");
+    index--;
+    if(index < 0){
+        index = imgArr.length - 1;
+       
+
+    };
+    img.src = imgArr[index];  
+    info.innerHTML ="一共有"+imgArr.length+"张，现在是第"+(index+1)+"张";
+};
+
+next.onclick = function(){
+   // alert("下一张");
+   index++;
+   if(index > imgArr.length - 1){
+        index = 0 ;
+   };
+   img.src = imgArr[index]; 
+   info.innerHTML ="一共有"+imgArr.length+"张，现在是第"+(index+1)+"张";
+};
+
+     };
+
+
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+   
+    
+
+
+    <div id="outer">
+        <p id="info"></p>
+    <img src="图片切换练习/6_474_0620a932-f7eb-404b-887c-be555011fddb_e7c2611.jpg" alt="1">
+
+ <button id="prev"><上一张</button>
+ <button id="next">下一张></button>
+
+
+
+    </div>
+
+</body>
+</html>

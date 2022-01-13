@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#box1{
+
+
+    width: 200px;
+    height: 200px;
+    background-color: #bfa;
+
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+<script>
+
+window.onload = function(){
+
+/* 点击以后修改box的大小
+
+获取box1
+ */
+var box1 = document.getElementById("box1");
+var btn01 = document.getElementById("btn01");
+
+var bc = document.getElementById("body");
+btn01.onclick = function(){
+
+    //修改box1的宽度
+
+/* 
+通过js修改元素的样式
+  语法：语速。style.样式名 = 样式值
+
+
+
+*/
+
+   box1.style.width = "600px";
+   box1.style.backgroundColor = "yellow";
+   
+
+
+
+};
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <button  id="btn01">点我一下</button#> <br\>
+        
+
+    <div id="box1"> </div>
+
+</body>
+</html>
