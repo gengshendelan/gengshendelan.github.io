@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+/* background-color: yellow; */
+/* background-image: url("img/1.jpeg");
+background-repeat: no-repeat;
+background-size: 100%; */
+
+
+}
+
+
+.ol{
+    position: relative;
+    margin-left: auto;
+    background-image: url("img/WechatIMG3.png");
+   width: 500px;
+   
+    background-repeat: no-repeat;
+   object-fit: cover;
+    
+ 
+
+
+    
+}
+  
+
+.ol:hover{
+    transform:scale(1.1);
+    box-shadow: 10px 10px 5px rgba(19, 19, 9, 0.324);
+}
