@@ -7,20 +7,36 @@ background-repeat: no-repeat;
 background-size: 100%; */
 
 background-color: crimson;
+font-size: 50px;
+color: azure;
 }
+.m{
+    position: relative;
+    margin: 50px ,auto;
+}
+.wenzi{
 
+    position: relative;
+    margin-left: 10%;
+    margin-top: 30%;
+    float: left;
 
+}
 .main{
     position: relative;
+    float: right;
 border-radius: 20px;
   
-   margin:5% auto;
-    width: 300px;
-    height: 400px;
+   margin-right: 10%;
+   margin-top: 10%;
+   width: 800px;
+   height: 800px;
      background-color: rgb(255, 255, 255);
+     background-image: url(img/a71ea8d3fd1f4134896e4923a0800dc1d0c85eb8.jpg );
    
-   
- 
+   background-repeat: no-repeat;
+ background-size: 800px;
+ background-position: center;
     
  
 
