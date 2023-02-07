@@ -14,6 +14,9 @@ color: azure;
     position: relative;
     margin: 50px ,auto;
 }
+.z{
+    text-align:center
+}
 .wenzi{
 
     position: relative;
@@ -22,6 +25,8 @@ color: azure;
    float: left;
 
 }
+
+
 .main{
     position: relative;
     float: right;
@@ -29,13 +34,13 @@ border-radius: 20px;
   
    margin-right: 10%;
    margin-top: 10%;
-   width: 800px;
-   height: 800px;
+   width: 400px;
+   height: 400px;
      background-color: rgb(255, 255, 255);
      background-image: url(img/a71ea8d3fd1f4134896e4923a0800dc1d0c85eb8.jpg );
    
    background-repeat: no-repeat;
- background-size: 800px;
+ background-size: 400px;
  background-position: center;
     
  
